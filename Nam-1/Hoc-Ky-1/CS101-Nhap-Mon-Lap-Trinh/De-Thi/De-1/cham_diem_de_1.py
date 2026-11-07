@@ -265,6 +265,14 @@ def cham_de_1():
     print(f"{'NỘI DUNG CÂU HỎI THI':<44} | {'ĐIỂM ĐẠT':^10} | {'TRẠNG THÁI':^12}")
     print("-" * 74)
 
+    goi_y_sua = {
+        "Câu 1": "Duyệt chữ số: if (tam % 10) % 2 != 0: dem += 1; tam //= 10. Tính S(n): for i in range(1, n + 1): s += 1 / (2 * i).",
+        "Câu 2": "Đếm hoa: c.isupper(). Đối xứng: s == s[::-1]. Tổng số: if c.isdigit(): tong += int(c).",
+        "Câu 3": "Dương chẵn: if i > 0 and i % 2 == 0: tong += i. Đếm k: if i == k: dem += 1.",
+        "Câu 4": "Xóa sách: if ma in tudien: del tudien[ma]; return True.",
+        "Câu 5": "Khai báo: def __init__(self, MaMay, TenMay, HangSanXuat, DungLuongPin, GiaBan): lưu đầy đủ 5 thuộc tính."
+    }
+
     for ten_c, d, md, ld in ket_qua:
         d = round(d, 2)
         md = round(md, 2)
@@ -274,6 +282,9 @@ def cham_de_1():
         if ld:
             for l in ld:
                 print(f"   └── ⚠️ {l}")
+            for k, huong_dan in goi_y_sua.items():
+                if k in ten_c:
+                    print(f"   └── 💡 Cách sửa: {huong_dan}")
 
     print("=" * 74)
     tong_diem = round(tong_diem, 2)
