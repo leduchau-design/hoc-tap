@@ -8,7 +8,8 @@ Thư mục này chứa toàn bộ các bài kiểm thử tự động (Unit Test
 
 | File kiểm thử | Đối tượng kiểm tra | Mục đích |
 | :--- | :--- | :--- |
-| [`test_h.py`](test_h.py) | [`h.py`](../h.py) | Kiểm thử 6 bài toán lập trình Python cơ bản & đề thi (ước số, lũy thừa, chuỗi đối xứng, đếm chữ thường, chữ hoa đầu từ, mảng số dương chẵn). |
+| [`test_h.py`](test_h.py) | [`h.py`](../h.py) | Kiểm thử chuẩn 6 bài toán lập trình Python cơ bản có kèm hộp thoại chỉ dẫn sửa lỗi sai. |
+| [`test_nhieu_truong_hop.py`](test_nhieu_truong_hop.py) | [`h.py`](../h.py) | Kiểm thử mở rộng với **52 trường hợp đa dạng** (số nguyên tố, lũy thừa, chuỗi phức tạp, palindrome, mảng âm/dương) + chế độ tự nhập input từ bàn phím. |
 
 ---
 
