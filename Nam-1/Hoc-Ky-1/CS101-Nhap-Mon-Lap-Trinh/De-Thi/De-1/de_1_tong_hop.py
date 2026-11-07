@@ -81,12 +81,13 @@ def main():
             print("--- CHẠY CÂU 4 ---")
             tudien = nhap_tu_dien_sach()
             in_tu_dien_sach(tudien)
-            ma_xoa = input("\nNhập mã sách cần xóa: ").strip()
-            if xoa_sach(tudien, ma_xoa):
-                print(f"Cuốn sách có mã số {ma_xoa} đã được xóa.")
-            else:
-                print("Không tìm thấy cuốn sách cần xóa.")
-            in_tu_dien_sach(tudien)
+            if tudien:
+                ma_xoa = input("\n👉 Nhập mã sách cần xóa: ").strip()
+                if xoa_sach(tudien, ma_xoa):
+                    print(f"Cuốn sách có mã số {ma_xoa} đã được xóa thành công.")
+                else:
+                    print("Không tìm thấy cuốn sách cần xóa.")
+                in_tu_dien_sach(tudien)
             
         elif chon == "5":
             print("\n" + "-" * 50)
@@ -103,4 +104,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n⏹️ Đã dừng chương trình an toàn.")
