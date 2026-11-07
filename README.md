@@ -65,11 +65,21 @@ Kho lưu trữ tích hợp sẵn mã nguồn bài tập ôn tập đề thi Pyth
 5. **`chuyen_chu_hoa_dau_tu(s)`**: Chuyển ký tự đầu tiên mỗi từ thành chữ hoa (`s.title()`).
 6. **`loc_so_duong_chan(list)`**: Lọc danh sách các số nguyên dương chẵn.
 
-### Lệnh chạy kiểm thử (Chạy 1 dòng lệnh là tự chấm):
+### Lệnh chạy kiểm thử (Chạy 1 dòng lệnh là tự test):
 ```bash
 python -m unittest tests/test_h.py
 ```
 *Kết quả:* Tất cả 6/6 bài test đều **OK** và pass tuyệt đối.
+
+### 💯 Hệ thống chấm điểm tự động (Auto-Grader thang điểm 10):
+Kho lưu trữ tích hợp sẵn file chấm điểm [`cham_diem.py`](cham_diem.py) và công cụ 1-click [`cham_diem.bat`](cham_diem.bat):
+```bash
+# Cách 1: Chạy trực tiếp bằng lệnh
+python cham_diem.py
+
+# Cách 2: Nhấp đúp chuột vào file cham_diem.bat
+```
+*Hệ thống sẽ tự động chấm điểm chi tiết từng câu, tính tổng điểm trên thang 10 và xếp loại học tập (Xuất sắc, Giỏi, Khá).*
 
 ---
 
