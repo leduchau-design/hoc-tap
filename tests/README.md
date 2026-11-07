@@ -10,6 +10,7 @@ Thư mục này chứa toàn bộ các bài kiểm thử tự động (Unit Test
 | :--- | :--- | :--- |
 | [`test_h.py`](test_h.py) | [`h.py`](../h.py) | Kiểm thử chuẩn 6 bài toán lập trình Python cơ bản có kèm hộp thoại chỉ dẫn sửa lỗi sai. |
 | [`test_nhieu_truong_hop.py`](test_nhieu_truong_hop.py) | [`h.py`](../h.py) | Kiểm thử mở rộng với **52 trường hợp đa dạng** (số nguyên tố, lũy thừa, chuỗi phức tạp, palindrome, mảng âm/dương) + chế độ tự nhập input từ bàn phím. |
+| [`test_de_1.py`](test_de_1.py) | [`De-Thi/De-1/`](../Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/) | Kiểm thử tự động toàn bộ 5 câu hỏi của Đề thi số 1 (Mã đề: 11301). |
 
 ---
 

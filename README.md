@@ -81,6 +81,12 @@ python cham_diem.py
 ```
 *Hệ thống sẽ tự động chấm điểm chi tiết từng câu, tính tổng điểm trên thang 10 và xếp loại học tập (Xuất sắc, Giỏi, Khá).*
 
+### 📝 Đề Thi Kết Thúc Môn Học (Đề 1 - Mã đề: 11301)
+Đã giải chi tiết và tổ chức theo đúng quy chuẩn trường thi tại [`Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/):
+* **5 file bài làm riêng:** [`cau1.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/cau1.py), [`cau2.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/cau2.py), [`cau3.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/cau3.py), [`cau4.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/cau4.py), [`cau5.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/cau5.py).
+* **File tổng hợp có menu:** [`de_1_tong_hop.py`](Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/De-Thi/De-1/de_1_tong_hop.py) & Tiện ích 1-Click [`chay_de_1.bat`](chay_de_1.bat).
+* **File kiểm thử tự động:** [`tests/test_de_1.py`](tests/test_de_1.py) (9/9 bài test đều đạt chuẩn).
+
 ---
 
 ## 📊 Bảng Tổng Hợp Môn Học
