@@ -11,6 +11,7 @@ Repository này được sử dụng để lưu trữ, quản lý toàn bộ tà
 ## 📑 Mục Lục
 
 - [Cấu Trúc Thư Mục](#-cấu-trúc-thư-mục)
+- [Bài Tập Python & Kiểm Thử Tự Động (Unit Tests)](#-bài-tập-python--kiểm-thử-tự-động-unit-tests)
 - [Bảng Tổng Hợp Môn Học](#-bảng-tổng-hợp-môn-học)
   - [Học Kỳ 1](#học-kỳ-1)
   - [Học Kỳ 2](#học-kỳ-2)
@@ -49,6 +50,26 @@ study-repository/
 └── Nam-2/
     └── README.md
 ```
+
+---
+
+## 🧪 Bài Tập Python & Kiểm Thử Tự Động (Unit Tests)
+
+Kho lưu trữ tích hợp sẵn mã nguồn bài tập ôn tập đề thi Python [`h.py`](h.py) cùng bộ kiểm thử tự động [`tests/test_h.py`](tests/test_h.py).
+
+### Danh mục bài tập trong `h.py`:
+1. **`tong_uoc_so(n)`**: Tính tổng tất cả các ước số nguyên dương của `n`.
+2. **`tinh_tong_luy_thua(n)`**: Tính tổng $S(n) = 1^1 + 2^2 + 3^3 + \dots + n^n$.
+3. **`dem_chu_thuong(s)`**: Đếm số ký tự in thường trong chuỗi `s`.
+4. **`kiem_tra_doi_xung(s)`**: Kiểm tra chuỗi đối xứng (Palindrome).
+5. **`chuyen_chu_hoa_dau_tu(s)`**: Chuyển ký tự đầu tiên mỗi từ thành chữ hoa (`s.title()`).
+6. **`loc_so_duong_chan(list)`**: Lọc danh sách các số nguyên dương chẵn.
+
+### Lệnh chạy kiểm thử (Chạy 1 dòng lệnh là tự chấm):
+```bash
+python -m unittest tests/test_h.py
+```
+*Kết quả:* Tất cả 6/6 bài test đều **OK** và pass tuyệt đối.
 
 ---
 
