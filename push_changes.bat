@@ -7,17 +7,14 @@ echo.
 echo [1/3] Kiểm tra trạng thái file...
 git status -s
 echo.
-set /p commit_msg="Nhập nội dung cập nhật (Nhấn Enter để dùng mặc định: 'Cập nhật tài liệu'): "
-if "%commit_msg%"=="" set commit_msg=Cập nhật tài liệu môn học
-echo.
 echo [2/3] Đang lưu thay đổi vào Git...
 git add .
-git commit -m "%commit_msg%"
+git commit -m "Cap nhat tai lieu hoc tap va bai tap Python" 2>nul
 echo.
-echo [3/3] Đang đẩy (push) lên GitHub...
+echo [3/3] Đang đẩy (push) lên GitHub: https://github.com/leduchau-design/hoc-tap...
 git push -u origin main
 echo.
 echo ========================================================
-echo [OK] Đã hoàn tất đồng bộ lên GitHub!
+echo [OK] Hoàn tất đồng bộ! Hãy kiểm tra lại trên GitHub.
 echo ========================================================
 pause
