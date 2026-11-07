@@ -239,6 +239,15 @@ def cham_bai():
     print(f"{'NỘI DUNG KIỂM TRA':<42} | {'ĐIỂM ĐẠT':^10} | {'TRẠNG THÁI':^12}")
     print("-" * 72)
 
+    goi_y_sua = {
+        "Câu 1": "Sửa vòng lặp thành 'range(1, n + 1)' để tính luôn số n và thêm 'if n <= 0: return 0'.",
+        "Câu 2": "Lũy thừa trong Python là toán tử '**' (ví dụ i ** i), không dùng 'i * i' hay '^'.",
+        "Câu 3": "Duyệt từng ký tự c trong s và kiểm tra: 'sum(1 for c in s if c.islower())'.",
+        "Câu 4": "Làm sạch chuỗi: 's.replace(\" \", \"\").lower()' rồi so sánh với '[::-1]'.",
+        "Câu 5": "Dùng 's.title()' trong Python để viết hoa ký tự đầu của TẤT CẢ các từ.",
+        "Câu 6": "Điều kiện số dương chẵn phải là: 'x > 0 and x % 2 == 0' (loại trừ số 0 và số âm)."
+    }
+
     for ten, diem, max_d, ly_do in ket_qua_chi_tiet:
         diem = round(diem, 2)
         max_d = round(max_d, 2)
@@ -247,7 +256,11 @@ def cham_bai():
         print(f"{ten:<42} | {diem_str:^10} | {trang_thai:^12}")
         if ly_do:
             for ld in ly_do:
-                print(f"   └── Chi tiết: {ld}")
+                print(f"   └── ⚠️ Lỗi sai: {ld}")
+            # In hướng dẫn cách sửa
+            for key, huong_dan in goi_y_sua.items():
+                if key in ten:
+                    print(f"   └── 💡 Cách sửa: {huong_dan}")
 
     print("=" * 72)
     tong_diem = round(tong_diem, 1)
