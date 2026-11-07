@@ -74,3 +74,18 @@ yarn-error.log*
 # *.7z
 # *.tar.gz
 # *.iso
+
+# ================================
+# Bảo mật thông tin riêng tư & Mật khẩu
+# ================================
+.env
+.env.*
+*.secret
+*matkhau*
+*password*
+credentials.json
+client_secret*.json
+token.txt
+id_rsa*
+*.pem
+*.key
