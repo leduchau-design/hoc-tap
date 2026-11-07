@@ -15,7 +15,7 @@ git add .
 git commit -m "%commit_msg%"
 echo.
 echo [3/3] Đang đẩy (push) lên GitHub...
-git push origin main
+git push -u origin main
 echo.
 echo ========================================================
 echo [OK] Đã hoàn tất đồng bộ lên GitHub!
