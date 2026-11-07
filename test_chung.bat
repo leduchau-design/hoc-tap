@@ -1,13 +1,13 @@
 @echo off
 chcp 65001 > nul
-title HỆ THỐNG KIỂM THỬ TOÀN BỘ BÀI TẬP (TEST CHUNG)
+title KIEM THU TOAN BO BAI TAP (TEST CHUNG)
 echo ========================================================
-echo       ĐANG CHẠY KIỂM THỬ TOÀN BỘ BÀI TẬP (TEST CHUNG)
+echo       KIEM THU TOAN BO BAI TAP (TEST CHUNG)
 echo ========================================================
 echo.
 python -m unittest discover -s tests -p "test_*.py" -v
 echo.
 echo ========================================================
-echo [OK] Đã hoàn thành kiểm thử tất cả các bài tập!
+echo [OK] Da hoan thanh kiem thu tat ca cac bai tap!
 echo ========================================================
 pause

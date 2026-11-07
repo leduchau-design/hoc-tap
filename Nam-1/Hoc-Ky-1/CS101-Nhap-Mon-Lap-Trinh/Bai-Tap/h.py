@@ -35,7 +35,7 @@ def chuyen_chu_hoa_dau_tu(s: str) -> str:
 
 def loc_so_duong_chan(danh_sach: list[int]) -> list[int]:
     """Lọc và trả về các số nguyên dương chẵn có trong danh sách."""
-    return [x for x in danh_sach if x > 0 and x % 2 == 0]
+    return [x for x in danh_sach if x > 0 and x % 2 != 0]
 
 
 if __name__ == "__main__":

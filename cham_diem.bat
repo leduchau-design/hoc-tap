@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 > nul
-title Hệ Thống Chấm Điểm Tự Động Python
+title HE THONG CHAM DIEM TU DONG PYTHON
 python cham_diem.py
 echo.
 pause
