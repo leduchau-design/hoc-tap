@@ -1,0 +1,75 @@
+# ================================
+# Hệ điều hành & Tệp tạm hệ thống
+# ================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ================================
+# Microsoft Office (Tệp nháp tạm thời)
+# ================================
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# ================================
+# Trình soạn thảo & IDEs
+# ================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ================================
+# Môi trường lập trình & Build Artifacts
+# ================================
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.egg-info/
+
+# C / C++
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Java
+*.class
+*.jar
+*.war
+target/
+
+# Node.js / Web
+node_modules/
+dist/
+.next/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================================
+# File nén dung lượng lớn (Nên lưu trữ trên Google Drive / OneDrive)
+# ================================
+# Bỏ ghi chú nếu bạn không muốn đẩy các file nén quá nặng lên GitHub:
+# *.zip
+# *.rar
+# *.7z
+# *.tar.gz
+# *.iso
