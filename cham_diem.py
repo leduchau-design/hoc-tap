@@ -19,14 +19,27 @@ def cham_bai():
     print("=" * 72)
     print("       🎓 HỆ THỐNG CHẤM ĐIỂM TỰ ĐỘNG BÀI TẬP PYTHON - HỌC TẬP 🎓       ")
     print("=" * 72)
-    print(f"[*] Đang nạp mã nguồn từ file 'h.py'...")
+    bai_tap_dir = os.path.abspath(r"Nam-1/Hoc-Ky-1/CS101-Nhap-Mon-Lap-Trinh/Bai-Tap")
+    if os.path.exists(os.path.join(bai_tap_dir, "h.py")):
+        if bai_tap_dir not in sys.path:
+            sys.path.insert(0, bai_tap_dir)
+        source_desc = "Nam-1/.../Bai-Tap/h.py"
+    else:
+        source_desc = "h.py"
+
+    print(f"[*] Đang nạp mã nguồn từ: {source_desc}...")
     time.sleep(0.3)
 
     try:
-        import h
+        import importlib
+        if "h" in sys.modules:
+            import h
+            importlib.reload(h)
+        else:
+            import h
     except ImportError as e:
         print(f"\n[❌ LỖI NGHIÊM TRỌNG] Không thể import file 'h.py': {e}")
-        print("Vui lòng đảm bảo file 'h.py' nằm cùng thư mục với file chấm điểm.")
+        print("Vui lòng đảm bảo file 'h.py' nằm trong thư mục Bai-Tap hoặc thư mục gốc.")
         return 0.0
 
     tong_diem = 0.0

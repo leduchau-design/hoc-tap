@@ -6,8 +6,11 @@ import os
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-# Thêm đường dẫn thư mục gốc để nạp file h.py
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Ưu tiên nạp file h.py từ thư mục môn học Bai-Tap
+bai_tap_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Nam-1", "Hoc-Ky-1", "CS101-Nhap-Mon-Lap-Trinh", "Bai-Tap"))
+if os.path.exists(bai_tap_dir):
+    sys.path.insert(0, bai_tap_dir)
+sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from h import (
     tong_uoc_so,
