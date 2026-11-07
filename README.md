@@ -1,4 +1,4 @@
-# 🎓 Kho Lưu Trữ Tài Liệu Môn Học (Study Repository)
+# 🎓 Kho Lưu Trữ Tài Liệu Học Tập (hoc-tap)
 
 ![GitHub repo size](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue?style=flat-square)
